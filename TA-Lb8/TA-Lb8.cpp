@@ -5,7 +5,7 @@
 using namespace std;
 
 void handleInvalidInput() {
-    cout << "Âè ââåëè íåä³éñíó êîìàíäó! Ñïðîáóéòå ùå ðàç!!";
+    cout << "Ã‚Ã¨ Ã¢Ã¢Ã¥Ã«Ã¨ Ã­Ã¥Ã¤Â³Ã©Ã±Ã­dÐ²Ð°Ã³! Ã‘Ã¯Ã°Ã®Ã¡Ã³Ã©Ã²Ã¥ Ã¹Ã¥ Ã°Ã Ã§!!";
     system("pause");
 }
 
@@ -18,23 +18,23 @@ int main()
     bool isContinue = true;
     while (isContinue) {
         system("cls");
-        cout << "1. Äîäàòè åëåìåíò" << endl;
-        cout << "2. ×³ ì³ñòèòü åëåìåíò" << endl;
-        cout << "3. Âçÿòè åëåìåíò" << endl;
-        cout << "4. Âèäàëèòè åëåìåíò" << endl;
-        cout << "5. Âèâåñòè âèñîòó äåðåâà" << endl;
-        cout << "6. Âèâåñòè ãëèáèíó Âóçëà" << endl;
-        cout << "7. Âñòàíîâèòè òèï îáõîäó äåðåâà" << endl;
-        cout << "8. Çàâåðøåííÿ ðîáîòè" << endl;
-        cout << "Âàøå äåðåâî: " << tree << endl;
-        cout << "Ê³ëüê³ñòü åëåìåíò³â: " << tree.getCount() << endl;
-        cout << "\nÂâåä³òü êîìàíäó: ";
+        cout << "1. Ã„Ã®Ã¤Ã Ã²Ã¨ Ã¥Ã«Ã¥Ã¬Ã¥Ã­Ã²" << endl;
+        cout << "2. Ã—Â³ Ã¬Â³Ã±Ã²Ã¨Ã²Ã¼ Ã¥Ã«Ã¥Ã¬Ã¥Ã­Ã²" << endl;
+        cout << "3. Ã‚Ã§Ã¿Ã²Ã¨ Ã¥Ã«Ã¥Ã¬Ã¥Ã­Ã²" << endl;
+        cout << "4. Ã‚Ã¨Ã¤Ã Ã«Ã¨Ã²Ã¨ Ã¥Ã«Ã¥Ã¬Ã¥Ã­Ã²" << endl;
+        cout << "5. Ã‚Ã¨Ã¢Ã¥Ã±Ã²Ã¨ Ã¢Ã¨Ã±Ã®Ã²Ã³ Ã¤Ã¥Ã°Ã¥Ã¢Ã " << endl;
+        cout << "6. Ã‚Ã¨Ã¢Ã¥Ã±Ã²Ã¨ Ã£Ã«Ã¨Ã¡Ã¨Ã­Ã³ Ã‚Ã³Ã§Ã«Ã " << endl;
+        cout << "7. Ã‚Ã±Ã²Ã Ã­Ã®Ã¢Ã¨Ã²Ã¨ Ã²Ã¨Ã¯ Ã®Ã¡ÃµÃ®Ã¤Ã³ Ã¤Ã¥Ã°Ã¥Ã¢Ã " << endl;
+        cout << "8. Ã‡Ã Ã¢Ã¥Ã°Ã¸Ã¥Ã­Ã­Ã¿ Ã°Ã®Ã¡Ã®Ã²Ã¨" << endl;
+        cout << "Ã‚Ã Ã¸Ã¥ Ã¤Ã¥Ã°Ã¥Ã¢Ã®: " << tree << endl;
+        cout << "ÃŠÂ³Ã«Ã¼ÃªÂ³Ã±Ã²Ã¼ Ã¥Ã«Ã¥Ã¬Ã¥Ã­Ã²Â³Ã¢: " << tree.getCount() << endl;
+        cout << "\nÃ‚Ã¢Ã¥Ã¤Â³Ã²Ã¼ ÃªÃ®Ã¬Ã Ã­Ã¤Ã³: ";
         char command = 0;
         cin >> command;
         int value = 0;
         switch (command) {
         case '1':
-            cout << "Ââåä³òü çíà÷åííÿ: ";
+            cout << "Ã‚Ã¢Ã¥Ã¤Â³Ã²Ã¼ Ã§Ã­Ã Ã·Ã¥Ã­Ã­Ã¿: ";
             cin >> value;
             try
             {
@@ -47,17 +47,17 @@ int main()
 			}
             break;
         case '2':
-            cout << "Ââåä³òü çíà÷åííÿ: ";
+            cout << "Ã‚Ã¢Ã¥Ã¤Â³Ã²Ã¼ Ã§Ã­Ã Ã·Ã¥Ã­Ã­Ã¿: ";
             cin >> value;
-            cout << "ðåçóëüòàò: " << tree.isContains(value) << endl;
+            cout << "Ã°Ã¥Ã§Ã³Ã«Ã¼Ã²Ã Ã²: " << tree.isContains(value) << endl;
             system("pause");
             break;
         case '3':
-            cout << "Çíà÷åííÿ âóçëà: ";
+            cout << "Ã‡Ã­Ã Ã·Ã¥Ã­Ã­Ã¿ Ã¢Ã³Ã§Ã«Ã : ";
             cin >> value;
             try
             {
-                 cout << "Çíà÷åííÿ åëåìåíòà: " << tree.peek(value) << endl;
+                 cout << "Ã‡Ã­Ã Ã·Ã¥Ã­Ã­Ã¿ Ã¥Ã«Ã¥Ã¬Ã¥Ã­Ã²Ã : " << tree.peek(value) << endl;
             }
             catch (const std::invalid_argument& e)
             {
@@ -67,7 +67,7 @@ int main()
             system("pause");
             break;
         case '4':
-            cout << "Âèäàëèòè åëåìåíò: ";
+            cout << "Ã‚Ã¨Ã¤Ã Ã«Ã¨Ã²Ã¨ Ã¥Ã«Ã¥Ã¬Ã¥Ã­Ã²: ";
             cin >> value;          
             try
             {
@@ -80,25 +80,25 @@ int main()
             }
             break;
         case '5':
-            cout << "Âèñîòà äåðåâà: " << tree.getHeight() << endl;
+            cout << "Ã‚Ã¨Ã±Ã®Ã²Ã  Ã¤Ã¥Ã°Ã¥Ã¢Ã : " << tree.getHeight() << endl;
             system("pause");
             break;
         case '6':
-            cout << "Ââåä³òü êëþ÷: ";
+            cout << "Ã‚Ã¢Ã¥Ã¤Â³Ã²Ã¼ ÃªÃ«Ã¾Ã·: ";
             cin >> value;
-            cout << "Ãëèáèíà " << '[' << value << ']' << " Åëåìåíòà: " << tree.getDepth(value) << endl;
+            cout << "ÃƒÃ«Ã¨Ã¡Ã¨Ã­Ã  " << '[' << value << ']' << " Ã…Ã«Ã¥Ã¬Ã¥Ã­Ã²Ã : " << tree.getDepth(value) << endl;
             system("pause");
             break;
         case '7':
-            cout << "Ðåæèìè:" << endl;
-            cout << "1. Ïðÿìî" << endl;
-            cout << "2. Çâîðîòíüî" << endl;
-            cout << "3. Ñèìåòðè÷íî" << endl;
-            cout << "Ââåä³òü çíà÷åííÿ: ";
+            cout << "ÃÃ¥Ã¦Ã¨Ã¬Ã¨:" << endl;
+            cout << "1. ÃÃ°Ã¿Ã¬Ã®" << endl;
+            cout << "2. Ã‡Ã¢Ã®Ã°Ã®Ã²Ã­Ã¼Ã®" << endl;
+            cout << "3. Ã‘Ã¨Ã¬Ã¥Ã²Ã°Ã¨Ã·Ã­Ã®" << endl;
+            cout << "Ã‚Ã¢Ã¥Ã¤Â³Ã²Ã¼ Ã§Ã­Ã Ã·Ã¥Ã­Ã­Ã¿: ";
             cin >> value;
             value--;
             if (value < 0 || value > 2) {
-                cout << "Íåâ³ðíå çíà÷åííÿ - " << value << endl;
+                cout << "ÃÃ¥Ã¢Â³Ã°Ã­Ã¥ Ã§Ã­Ã Ã·Ã¥Ã­Ã­Ã¿ - " << value << endl;
                 system("pause");
             }
             else {
